@@ -1,8 +1,6 @@
 - 👋 Hi, I’m @kevinj24fr
 - 👀 I’m interested in ... Cancer Neuroscience
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 📫 You can reach me at kevin.joseph@uniklinik-freiburg.de
 
 <!---
 kevinj24fr/kevinj24fr is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
