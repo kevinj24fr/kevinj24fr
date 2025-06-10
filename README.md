@@ -55,7 +55,7 @@ We create **robust R/Python workflows** to integrate **Visium**, **snRNA-seq**, 
 - **Neuron-glioblastoma interaction pipeline** — spatial + electrophysiology + network modeling  
 - **Single-cell / spatial data integration frameworks** — used in **Glioblastoma** and **TBI** studies  
 
-👉 Explore my [Repositories](https://github.com/kevinj24fr?tab=repositories) for more.
+Explore my [Repositories](https://github.com/kevinj24fr?tab=repositories) for more.
 
 ---
 
@@ -71,7 +71,7 @@ If you are interested in working together → [Email me](mailto:kevin.joseph@uni
 
 ---
 
-### 📫 Contact
+### Contact
 
 - Email: [kevin.joseph@uniklinik-freiburg.de](mailto:kevin.joseph@uniklinik-freiburg.de)  
 - GitHub: [kevinj24fr](https://github.com/kevinj24fr)  
@@ -82,6 +82,6 @@ If you are interested in working together → [Email me](mailto:kevin.joseph@uni
 
 ---
 
-### 🖥️ GitHub Activity
+### GitHub Activity
 
 ![Kevin's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kevinj24fr&theme=github)
