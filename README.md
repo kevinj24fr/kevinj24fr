@@ -1,8 +1,8 @@
 # Hi, I’m Kevin Joseph
 
 [![Email](https://img.shields.io/badge/Email-kevin.joseph@uniklinik--freiburg.de-blue?logo=gmail)](mailto:kevin.joseph@uniklinik-freiburg.de)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin%20Joseph-blue?logo=linkedin)](https://www.linkedin.com/in/your-profile-link)  
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0000--0000--0000-a6ce39?logo=orcid)](https://orcid.org/0000-0001-6317-8736)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin%20Joseph-blue?logo=linkedin)](https://www.linkedin.com/in/josephkevin)  
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6317--8736-a6ce39?logo=orcid)](https://orcid.org/0000-0001-6317-8736)
 
 ---
 
