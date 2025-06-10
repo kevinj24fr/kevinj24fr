@@ -1,4 +1,4 @@
-# Kevin Joseph — Computational Neuro-oncology | Spatial Omics | Intraoperative AI
+# Kevin Joseph — Computational Neuro-oncology | Multi-Omics | Electrophysiology
 
 [![Email](https://img.shields.io/badge/Email-kevin.joseph@uniklinik--freiburg.de-blue?logo=gmail)](mailto:kevin.joseph@uniklinik-freiburg.de)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin%20Joseph-blue?logo=linkedin)](https://www.linkedin.com/in/josephkevin)  
@@ -14,8 +14,8 @@ My group develops **integrated analysis pipelines**, **novel diagnostics**, and 
 We work at the intersection of:
 
 - **Spatial single-cell multi-omics**  
-- **Neuronal physiology** (electrophysiology, imaging)  
-- **Intraoperative diagnostics and AI tools**  
+- **Neuronal physiology** (electro/opto-physiology, imaging)  
+- **Clinical diagnostics and AI tools**  
 
 Our goal is to translate discoveries into **precision neuro-oncology workflows** that impact real patients.
 
@@ -24,13 +24,13 @@ Our goal is to translate discoveries into **precision neuro-oncology workflows**
 ### Research Areas
 
 #### Neuron-glioblastoma interactions  
-We combine **spatial transcriptomics**, **electrophysiology**, and **network analysis** to uncover how glioblastoma cells integrate into neuronal circuits.
+We combine **spatial transcriptomics**, **electrophysiology**, and **network analysis** to uncover how tumor cells integrate into neuronal circuits.
 
 #### Tumor microenvironmental plasticity  
 We map how tumors remodel their environment across space and time, focusing on **immune suppression**, **vascular adaptation**, and **neural invasion**.
 
 #### FTIR-based intraoperative diagnostics  
-We develop **real-time molecular diagnostics** for neurosurgery, using **FTIR spectroscopy** and **AI models** to guide tumor resection.
+We develop **real-time molecular diagnostics** for neurosurgery, using **Spectroscopic** approaches augmented with **AI models** to guide patient stratification.
 
 #### Multimodal data integration pipelines  
 We create **robust R/Python workflows** to integrate **Visium**, **snRNA-seq**, **imaging**, and **electrophysiological** data — and share them openly.
