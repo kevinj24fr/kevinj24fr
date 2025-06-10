@@ -7,7 +7,7 @@
 
 ---
 
-## 🚀 Mission
+## Mission
 
 I lead an interdisciplinary research program where **single-cell & spatial transcriptomics**, **AI**, and **neurotechnology** converge.  
 We aim to transform **high-dimensional biological data** into **clinical insights** and to advance fundamental understanding of how the brain responds to tumors, trauma, and intervention.
@@ -17,7 +17,7 @@ We aim to transform **high-dimensional biological data** into **clinical insight
 
 ---
 
-## 🔬 Current Research
+## Current Research
 
 ### Glioblastoma
 - Spatial & single-cell transcriptomics of **human glioblastoma** (primary & revision)
@@ -25,7 +25,7 @@ We aim to transform **high-dimensional biological data** into **clinical insight
 - Developing **graph-based models** and **entropy metrics** for spatial niche dynamics
 
 ### Micro-TBI
-- **Single-cell time series** (12-week) after **micro-TBI** in animal models
+- **Single-cell time series** after **micro-TBI** in animal models
 - Studying **plasticity and resilience** of cortical circuits post-trauma
 - Linking **transcriptomic and electrophysiological changes**
 
@@ -34,8 +34,8 @@ We aim to transform **high-dimensional biological data** into **clinical insight
 - Investigating **TGF-β-driven fibrosis** and **ECM remodeling**
 
 ### Clinical Diagnostics
-- **FTIR spectroscopy** for **intraoperative CSF leak detection**
-- Building **ML models** for real-time surgical decision support
+- **FTIR spectroscopy** for **CSF leak detection**
+- Building **ML models** for real-time decision support
 
 ### Electrophysiology & Imaging
 - Integrating **calcium imaging**, **electrophysiology**, and **transcriptomics**
@@ -43,7 +43,7 @@ We aim to transform **high-dimensional biological data** into **clinical insight
 
 ---
 
-## 🖥️ Computational Expertise
+## Computational Expertise
 
 - **R**: Seurat, SpatialExperiment, fgsea, WGCNA, custom entropy pipelines
 - **Python**: PyTorch, scVI, Pyro, Scanpy
@@ -54,7 +54,7 @@ We aim to transform **high-dimensional biological data** into **clinical insight
 
 ---
 
-## 🌍 Biological & Clinical Expertise
+## Biological Expertise
 
 - Group leader in **NeuroEngineering**  
 - Proven expertise in:
@@ -67,7 +67,7 @@ We aim to transform **high-dimensional biological data** into **clinical insight
 
 ---
 
-## 🚀 Looking to Collaborate
+## Collaborate
 
 I am open to collaborations with:
 - Advanced postdocs & ML scientists interested in building **new methods**  
