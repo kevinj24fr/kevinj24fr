@@ -2,86 +2,77 @@
 
 [![Email](https://img.shields.io/badge/Email-kevin.joseph@uniklinik--freiburg.de-blue?logo=gmail)](mailto:kevin.joseph@uniklinik-freiburg.de)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin%20Joseph-blue?logo=linkedin)](https://www.linkedin.com/in/josephkevin)  
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6317--8736-a6ce39?logo=orcid)](https://orcid.org/0000-0001-6317-8736)  
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6317--8736-a6ce39?logo=orcid)](https://orcid.org/0000-0001-6317-8736) 
+📍 University Clinic of Freiburg, Germany
 
 ---
 
-### About Me
+## 🚀 Mission
 
-I am a **computational biologist** and **research director** at the University Hospital Freiburg.  
-My group develops **integrated analysis pipelines**, **novel diagnostics**, and **open-source tools** to understand and treat **brain tumors**.
+I lead an interdisciplinary research program where **single-cell & spatial transcriptomics**, **AI**, and **neurotechnology** converge.  
+We aim to transform **high-dimensional biological data** into **clinical insights** and to advance fundamental understanding of how the brain responds to tumors, trauma, and intervention.
 
-We work at the intersection of:
-
-- **Spatial single-cell multi-omics**  
-- **Neuronal physiology** (electro/opto-physiology, imaging)  
-- **Clinical diagnostics and AI tools**  
-
-Our goal is to translate discoveries into **precision neuro-oncology workflows** that impact real patients.
+**As a computational biologist**, I build the tools to explore them.  
+**As a neuroscientist**, I collaborate to drive discovery across disciplines.
 
 ---
 
-### Research Areas
+## 🔬 Current Research
 
-#### Neuron-glioblastoma interactions  
-We combine **spatial transcriptomics**, **electrophysiology**, and **network analysis** to uncover how tumor cells integrate into neuronal circuits.
+### Glioblastoma
+- Spatial & single-cell transcriptomics of **human glioblastoma** (primary & revision)
+- Mapping **tumor-immune-neuron interactions** and **cell state plasticity**
+- Developing **graph-based models** and **entropy metrics** for spatial niche dynamics
 
-#### Tumor microenvironmental plasticity  
-We map how tumors remodel their environment across space and time, focusing on **immune suppression**, **vascular adaptation**, and **neural invasion**.
+### Micro-TBI
+- **Single-cell time series** (12-week) after **micro-TBI** in animal models
+- Studying **plasticity and resilience** of cortical circuits post-trauma
+- Linking **transcriptomic and electrophysiological changes**
 
-#### FTIR-based intraoperative diagnostics  
-We develop **real-time molecular diagnostics** for neurosurgery, using **Spectroscopic** approaches augmented with **AI models** to guide patient stratification.
+### Ligamentum Flavum Fibrosis
+- Single-cell atlas of **ligamentum flavum hypertrophy**
+- Investigating **TGF-β-driven fibrosis** and **ECM remodeling**
 
-#### Multimodal data integration pipelines  
-We create **robust R/Python workflows** to integrate **Visium**, **snRNA-seq**, **imaging**, and **electrophysiological** data — and share them openly.
+### Clinical Diagnostics
+- **FTIR spectroscopy** for **intraoperative CSF leak detection**
+- Building **ML models** for real-time surgical decision support
 
----
-
-### Selected Technologies
-
-| Domain                   | Tools / Methods |
-|--------------------------|-----------------|
-| Single-cell / Spatial    | Seurat, BayesSpace, CellChat, Monocle, GSVA |
-| Bioinformatics           | R, Python, Bioconductor |
-| Machine Learning         | Autoencoders, CNNs, interpretable AI |
-| Imaging & Physiology     | FTIR, calcium imaging, MRI, ECoG |
-| Surgical Translation     | Intraoperative optical diagnostics, CSF leak detection |
+### Electrophysiology & Imaging
+- Integrating **calcium imaging**, **electrophysiology**, and **transcriptomics**
+- Quantifying **functional plasticity** at the cellular level
 
 ---
 
-### Featured Projects
+## 🖥️ Computational Expertise
 
-- **FreiSpecR** — R package for robust FTIR spectroscopy analysis  
-- **Neuron-glioblastoma interaction pipeline** — spatial + electrophysiology + network modeling  
-- **Single-cell / spatial data integration frameworks** — used in **Glioblastoma** and **TBI** studies  
-
-Explore my [Repositories](https://github.com/kevinj24fr?tab=repositories) for more.
-
----
-
-### Opportunities
-
-I welcome collaborations with:
-
-- **Students and postdocs** — interested in **spatial omics**, **tumor neuroscience**, **translational AI**  
-- **Industry partners** — in **diagnostics**, **surgical technology**, **bioinformatics**  
-- **Clinical researchers and consortia** — aiming to bring **precision oncology** into the OR  
-
-If you are interested in working together → [Email me](mailto:kevin.joseph@uniklinik-freiburg.de)!
+- **R**: Seurat, SpatialExperiment, fgsea, WGCNA, custom entropy pipelines
+- **Python**: PyTorch, scVI, Pyro, Scanpy
+- **Graph modeling**: PyG, NetworkX
+- **Machine learning**: VAEs, interpretable ML (SHAP, IG), prototype learning
+- **Spatial analysis**: building alternatives to BayesSpace
+- **Signal processing**: electrophysiology, calcium imaging
 
 ---
 
-### Contact
+## 🌍 Biological & Clinical Expertise
 
-- Email: [kevin.joseph@uniklinik-freiburg.de](mailto:kevin.joseph@uniklinik-freiburg.de)  
-- GitHub: [kevinj24fr](https://github.com/kevinj24fr)  
+- Group leader in **NeuroEngineering**  
+- Proven expertise in:
+  - **Glioblastoma biology**
+  - **Brain tumor microenvironment**
+  - **Fibrosis & ECM remodeling**
+  - **Trauma-induced CNS responses**
+  - **Neuroimmune interactions**
+  - **Single-cell & spatial transcriptomics**
 
 ---
 
-> *“Precision medicine in neuro-oncology will depend on decoding the tumor’s dialogue with the brain — and translating this knowledge to the point of care.”*
+## 🚀 Looking to Collaborate
+
+I am open to collaborations with:
+- Advanced postdocs & ML scientists interested in building **new methods**  
+- Biologists eager to drive **computational innovation**  
+- Clinicians exploring **AI-driven translational tools**  
+- Industry partners interested in **neuroscience & digital twins**
 
 ---
-
-### GitHub Activity
-
-![Kevin's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kevinj24fr&theme=github)
