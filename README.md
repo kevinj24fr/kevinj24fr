@@ -1,4 +1,4 @@
-# Kevin Joseph — Computational Neuro-oncology | Multi-Omics | Electrophysiology
+# Kevin Joseph — Computational Neuro-oncology | Multi-Omics | Gliophysiology
 
 [![Email](https://img.shields.io/badge/Email-kevin.joseph@uniklinik--freiburg.de-blue?logo=gmail)](mailto:kevin.joseph@uniklinik-freiburg.de)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin%20Joseph-blue?logo=linkedin)](https://www.linkedin.com/in/josephkevin)  
