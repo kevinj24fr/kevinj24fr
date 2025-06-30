@@ -16,6 +16,16 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3498db">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js');
+        });
+      }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -44,13 +54,13 @@
                         <a href="mailto:kevin.joseph@uniklinik-freiburg.de" class="badge">
                             <i class="fas fa-envelope"></i> Email
                         </a>
-                        <a href="https://www.linkedin.com/in/josephkevin" class="badge" target="_blank">
+                        <a href="https://www.linkedin.com/in/josephkevin" class="badge" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
-                        <a href="https://orcid.org/0000-0001-6317-8736" class="badge" target="_blank">
+                        <a href="https://orcid.org/0000-0001-6317-8736" class="badge" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-id-badge"></i> ORCID
                         </a>
-                        <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" class="badge" target="_blank">
+                        <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" class="badge" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-graduation-cap"></i> Google Scholar
                         </a>
                     </div>
@@ -70,8 +80,19 @@
             <!-- Current Research -->
             <section class="fade-in-section">
                 <h2>Current Research</h2>
+                <div class="research-controls">
+                    <input type="text" id="research-search" class="search-input" placeholder="Search research topics..." aria-label="Search research">
+                    <select id="research-filter" class="filter-select" aria-label="Filter by category">
+                        <option value="">All Categories</option>
+                        <option value="glioblastoma">Glioblastoma</option>
+                        <option value="micro-tbi">Micro-TBI</option>
+                        <option value="fibrosis">Fibrosis</option>
+                        <option value="diagnostics">Diagnostics</option>
+                        <option value="imaging">Imaging</option>
+                    </select>
+                </div>
                 <div class="research-grid">
-                    <div class="research-card" data-category="glioblastoma">
+                    <div class="research-card" data-category="glioblastoma" data-title="glioblastoma tumor immune neuron graph entropy">
                         <div class="card-header">
                             <h3>🧠 Glioblastoma</h3>
                             <div class="card-badge">Active</div>
@@ -86,9 +107,13 @@
                             <span class="tech-tag">Spatial</span>
                             <span class="tech-tag">Graph ML</span>
                         </div>
+                        <div class="progress-indicator">
+                            <div class="progress-label">Project Progress</div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                            <span class="progress-percent">80%</span>
+                        </div>
                     </div>
-
-                    <div class="research-card" data-category="micro-tbi">
+                    <div class="research-card" data-category="micro-tbi" data-title="micro-tbi time series plasticity resilience electrophysiology">
                         <div class="card-header">
                             <h3>⚡ Micro-TBI</h3>
                             <div class="card-badge">Active</div>
@@ -103,9 +128,13 @@
                             <span class="tech-tag">Electrophysiology</span>
                             <span class="tech-tag">Plasticity</span>
                         </div>
+                        <div class="progress-indicator">
+                            <div class="progress-label">Project Progress</div>
+                            <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+                            <span class="progress-percent">60%</span>
+                        </div>
                     </div>
-
-                    <div class="research-card" data-category="fibrosis">
+                    <div class="research-card" data-category="fibrosis" data-title="fibrosis ligamentum flavum hypertrophy tgf-b ecm remodeling">
                         <div class="card-header">
                             <h3>🔬 Ligamentum Flavum Fibrosis</h3>
                             <div class="card-badge">Active</div>
@@ -119,9 +148,13 @@
                             <span class="tech-tag">Fibrosis</span>
                             <span class="tech-tag">ECM</span>
                         </div>
+                        <div class="progress-indicator">
+                            <div class="progress-label">Project Progress</div>
+                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                            <span class="progress-percent">90%</span>
+                        </div>
                     </div>
-
-                    <div class="research-card" data-category="diagnostics">
+                    <div class="research-card" data-category="diagnostics" data-title="diagnostics ftir csf leak ml clinical">
                         <div class="card-header">
                             <h3>🏥 Clinical Diagnostics</h3>
                             <div class="card-badge">Active</div>
@@ -135,9 +168,13 @@
                             <span class="tech-tag">ML</span>
                             <span class="tech-tag">Clinical</span>
                         </div>
+                        <div class="progress-indicator">
+                            <div class="progress-label">Project Progress</div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                            <span class="progress-percent">70%</span>
+                        </div>
                     </div>
-
-                    <div class="research-card" data-category="imaging">
+                    <div class="research-card" data-category="imaging" data-title="imaging calcium electrophysiology transcriptomics plasticity">
                         <div class="card-header">
                             <h3>📊 Electrophysiology & Imaging</h3>
                             <div class="card-badge">Active</div>
@@ -151,6 +188,11 @@
                             <span class="tech-tag">Electrophysiology</span>
                             <span class="tech-tag">Integration</span>
                         </div>
+                        <div class="progress-indicator">
+                            <div class="progress-label">Project Progress</div>
+                            <div class="progress-bar"><div class="progress" style="width: 50%"></div></div>
+                            <span class="progress-percent">50%</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -158,50 +200,57 @@
             <!-- Publications Section -->
             <section class="fade-in-section">
                 <h2>Publications</h2>
+                <div class="publications-controls">
+                    <input type="text" id="pub-search" class="search-input" placeholder="Search publications..." aria-label="Search publications">
+                </div>
                 <div class="publications-intro">
                     <p>Selected publications from my research on computational neuro-oncology and multi-omics approaches.</p>
-                    <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" class="view-all-btn" target="_blank">
+                    <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" class="view-all-btn" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-external-link-alt"></i> View All on Google Scholar
                     </a>
                 </div>
                 <div class="publications-grid">
-                    <div class="publication-card">
-                        <div class="pub-header">
-                            <h4>Single-cell transcriptomics reveals distinct tumor microenvironmental patterns in glioblastoma</h4>
-                            <span class="pub-year">2023</span>
-                        </div>
-                        <p class="pub-authors">Joseph K, et al.</p>
-                        <p class="pub-journal">Nature Communications</p>
-                        <div class="pub-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 45 citations</span>
-                            <span class="metric"><i class="fas fa-download"></i> 1.2k downloads</span>
-                        </div>
+                    <!-- Publications dynamically loaded by JS -->
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section class="fade-in-section">
+                <h2>News & Updates</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-date">May 2024</div>
+                        <h4 class="news-title">Invited talk at ISCB: "AI for Tumor Microenvironment Mapping"</h4>
+                        <p class="news-desc">Presented new graph-based models for spatial transcriptomics at the International Society for Computational Biology annual meeting.</p>
                     </div>
-                    
-                    <div class="publication-card">
-                        <div class="pub-header">
-                            <h4>Graph-based modeling of spatial transcriptomics data reveals tumor-immune interactions</h4>
-                            <span class="pub-year">2023</span>
-                        </div>
-                        <p class="pub-authors">Joseph K, et al.</p>
-                        <p class="pub-journal">Cell Systems</p>
-                        <div class="pub-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 32 citations</span>
-                            <span class="metric"><i class="fas fa-download"></i> 890 downloads</span>
-                        </div>
+                    <div class="news-card">
+                        <div class="news-date">Apr 2024</div>
+                        <h4 class="news-title">Nature Communications paper featured</h4>
+                        <p class="news-desc">Our single-cell glioblastoma study was highlighted in Nature Communications' Editor's Choice.</p>
                     </div>
-                    
-                    <div class="publication-card">
-                        <div class="pub-header">
-                            <h4>Machine learning approaches for CSF leak detection using FTIR spectroscopy</h4>
-                            <span class="pub-year">2022</span>
-                        </div>
-                        <p class="pub-authors">Joseph K, et al.</p>
-                        <p class="pub-journal">Clinical Chemistry</p>
-                        <div class="pub-metrics">
-                            <span class="metric"><i class="fas fa-quote-left"></i> 28 citations</span>
-                            <span class="metric"><i class="fas fa-download"></i> 756 downloads</span>
-                        </div>
+                    <div class="news-card">
+                        <div class="news-date">Feb 2024</div>
+                        <h4 class="news-title">New grant: DFG Collaborative Research Centre</h4>
+                        <p class="news-desc">Awarded funding for multi-omics research on brain tumor microenvironments.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conferences Section -->
+            <section class="fade-in-section">
+                <h2>Conferences & Presentations</h2>
+                <div class="conf-grid">
+                    <div class="conf-card">
+                        <div class="conf-date">2024</div>
+                        <h4 class="conf-title">ISCB Annual Meeting</h4>
+                        <p class="conf-desc">Invited speaker: "AI for Tumor Microenvironment Mapping"</p>
+                        <a href="#" class="conf-link" target="_blank"><i class="fas fa-file-powerpoint"></i> Slides</a>
+                    </div>
+                    <div class="conf-card">
+                        <div class="conf-date">2023</div>
+                        <h4 class="conf-title">EMBO Workshop: Spatial Omics</h4>
+                        <p class="conf-desc">Talk: "Graph-based analysis of spatial transcriptomics in glioblastoma"</p>
+                        <a href="#" class="conf-link" target="_blank"><i class="fas fa-video"></i> Video</a>
                     </div>
                 </div>
             </section>
@@ -287,16 +336,16 @@
                         <a href="mailto:kevin.joseph@uniklinik-freiburg.de" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/josephkevin" aria-label="LinkedIn" target="_blank">
+                        <a href="https://www.linkedin.com/in/josephkevin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://orcid.org/0000-0001-6317-8736" aria-label="ORCID" target="_blank">
+                        <a href="https://orcid.org/0000-0001-6317-8736" aria-label="ORCID" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-id-badge"></i>
                         </a>
-                        <a href="https://github.com/kevinj24fr" aria-label="GitHub" target="_blank">
+                        <a href="https://github.com/kevinj24fr" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" aria-label="Google Scholar" target="_blank">
+                        <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-graduation-cap"></i>
                         </a>
                     </div>
@@ -304,6 +353,9 @@
                 <div class="footer-section">
                     <p>&copy; 2024 Kevin Joseph. All rights reserved.</p>
                     <p>University Clinic of Freiburg, Germany</p>
+                    <div class="page-counter">
+                        <span id="pageviews">Loading...</span> visits
+                    </div>
                 </div>
             </div>
         </div>

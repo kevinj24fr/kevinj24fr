@@ -621,7 +621,28 @@ body {
 
 .footer-section p {
   margin: 0.5rem 0;
+  color: var(--text-color);
   opacity: 0.8;
+}
+
+.page-counter {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-counter::before {
+  content: '👁️';
+  font-size: 1rem;
+}
+
+#pageviews {
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 
 /* Typography improvements */
@@ -752,4 +773,168 @@ pre {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* Search and filter controls */
+.research-controls, .publications-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+  background: var(--light-bg);
+  color: var(--text-color);
+  transition: border-color 0.2s;
+  outline: none;
+}
+.search-input:focus {
+  border-color: var(--secondary-color);
+}
+
+.filter-select {
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+  background: var(--light-bg);
+  color: var(--text-color);
+  transition: border-color 0.2s;
+  outline: none;
+}
+.filter-select:focus {
+  border-color: var(--secondary-color);
+}
+
+/* Progress indicators */
+.progress-indicator {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.progress-label {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.progress-bar {
+  flex: 1 1 120px;
+  background: var(--border-color);
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  min-width: 120px;
+  max-width: 200px;
+  position: relative;
+}
+.progress-bar .progress {
+  background: var(--secondary-color);
+  height: 100%;
+  border-radius: 10px;
+  width: 0%;
+  transition: width 1.2s cubic-bezier(.4,0,.2,1);
+}
+.progress-percent {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* News & Updates */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.news-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 2rem;
+  transition: var(--transition);
+  position: relative;
+}
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+.news-date {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.news-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.news-desc {
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+/* Conferences & Presentations */
+.conf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.conf-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 2rem;
+  transition: var(--transition);
+  position: relative;
+}
+.conf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+.conf-date {
+  font-size: 0.95rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.conf-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.conf-desc {
+  color: var(--text-color);
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+.conf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 0.98rem;
+}
+.conf-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 } 

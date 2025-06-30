@@ -1,0 +1,9 @@
+{
+  "name": "Kevin Joseph Academic Website",
+  "short_name": "KJoseph",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#2c3e50",
+  "theme_color": "#3498db",
+  "description": "Computational Neuro-oncology | Multi-Omics | Gliophysiology | Kevin Joseph"
+} 
