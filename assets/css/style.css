@@ -679,41 +679,6 @@ pre {
 /* Progress indicators */
 
 /* News & Updates */
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
-}
-.news-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 15px;
-  box-shadow: var(--shadow);
-  padding: 1.5rem 2rem;
-  transition: var(--transition);
-  position: relative;
-}
-.news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-}
-.news-date {
-  font-size: 0.95rem;
-  color: var(--secondary-color);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-.news-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-}
-.news-desc {
-  color: var(--text-color);
-  opacity: 0.9;
-}
 
 /* Conferences & Presentations */
 
