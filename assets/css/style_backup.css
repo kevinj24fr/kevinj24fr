@@ -300,6 +300,99 @@ body {
   border-color: var(--secondary-color);
 }
 
+/* Publications Section */
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.publication-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.publication-card:hover::before {
+  transform: scaleY(1);
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.pub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.pub-header h4 {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+  flex: 1;
+}
+
+.pub-year {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.pub-authors {
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.pub-journal {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.pub-metrics {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
 /* Expertise sections */
 .expertise-container {
   display: grid;
@@ -621,6 +714,9 @@ pre {
     grid-template-columns: 1fr;
   }
   
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
   
   .skills-grid {
     grid-template-columns: 1fr;
@@ -644,9 +740,20 @@ pre {
     padding: 0 1rem;
   }
   
+  .publications-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* Search and filter controls */
+.research-controls, .publications-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .search-input {
   padding: 0.6rem 1.2rem;

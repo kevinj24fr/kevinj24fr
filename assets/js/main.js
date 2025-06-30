@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initPageTransitions();
     initMouseFollowEffect();
     initResearchSearchAndFilter();
-    initPublicationSearch();
     initProgressBarAnimation();
-    fetchAndRenderScholarPublications();
     initPageViewCounter();
 });
 
@@ -330,20 +328,6 @@ function initResearchSearchAndFilter() {
     if (filterSelect) filterSelect.addEventListener('change', filterCards);
 }
 
-// Publication search
-function initPublicationSearch() {
-    const pubSearch = document.getElementById('pub-search');
-    const pubCards = document.querySelectorAll('.publication-card');
-    if (!pubSearch) return;
-    pubSearch.addEventListener('input', function() {
-        const search = pubSearch.value.toLowerCase();
-        pubCards.forEach(card => {
-            const title = card.getAttribute('data-title') || '';
-            card.style.display = title.includes(search) ? '' : 'none';
-        });
-    });
-}
-
 // Animate progress bars on scroll
 function initProgressBarAnimation() {
     const bars = document.querySelectorAll('.progress-bar .progress');
@@ -363,59 +347,6 @@ function initProgressBarAnimation() {
             bar.style.width = '0%';
         }
         observer.observe(bar);
-    });
-}
-
-// Fetch and render Google Scholar publications (5-10 most recent)
-function fetchAndRenderScholarPublications() {
-    const grid = document.querySelector('.publications-grid');
-    if (!grid) return;
-    // Remove static publication cards
-    grid.innerHTML = '<div class="pub-loading">Loading latest publications...</div>';
-    
-    // Use static data for now - more reliable than external APIs
-    const staticPublications = [
-        {
-            title: "Single-cell transcriptomics reveals distinct tumor microenvironmental patterns in glioblastoma",
-            year: "2023",
-            authors: "Joseph K, et al.",
-            publication: "Nature Communications",
-            citations: "45"
-        },
-        {
-            title: "Spatial transcriptomics analysis of micro-TBI induced plasticity",
-            year: "2023", 
-            authors: "Joseph K, et al.",
-            publication: "Cell Reports",
-            citations: "23"
-        },
-        {
-            title: "Graph-based modeling of tumor-immune interactions",
-            year: "2022",
-            authors: "Joseph K, et al.",
-            publication: "Nature Methods",
-            citations: "67"
-        }
-    ];
-    
-    // Render static publications
-    grid.innerHTML = '';
-    staticPublications.forEach((pub, i) => {
-        const card = document.createElement('div');
-        card.className = 'publication-card';
-        card.setAttribute('data-title', (pub.title + ' ' + pub.publication + ' ' + pub.authors).toLowerCase());
-        card.innerHTML = `
-            <div class="pub-header">
-                <h4>${pub.title}</h4>
-                <span class="pub-year">${pub.year}</span>
-            </div>
-            <p class="pub-authors">${pub.authors}</p>
-            <p class="pub-journal">${pub.publication}</p>
-            <div class="pub-metrics">
-                <span class="metric"><i class="fas fa-quote-left"></i> ${pub.citations} citations</span>
-            </div>
-        `;
-        grid.appendChild(card);
     });
 }
 
