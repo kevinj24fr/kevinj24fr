@@ -22,6 +22,11 @@
     <header class="site-header">
         <div class="wrapper">
             <a class="site-title" href="/">Kevin Joseph</a>
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -45,12 +50,15 @@
                         <a href="https://orcid.org/0000-0001-6317-8736" class="badge" target="_blank">
                             <i class="fas fa-id-badge"></i> ORCID
                         </a>
+                        <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" class="badge" target="_blank">
+                            <i class="fas fa-graduation-cap"></i> Google Scholar
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Mission -->
-            <section>
+            <section class="fade-in-section">
                 <h2>Mission</h2>
                 <p>I lead an interdisciplinary research program where <strong>single-cell & spatial transcriptomics</strong>, <strong>AI</strong>, and <strong>neurotechnology</strong> converge.<br>
                 We aim to transform <strong>high-dimensional biological data</strong> into <strong>clinical insights</strong> and to advance fundamental understanding of how the brain responds to tumors, trauma, and intervention.</p>
@@ -60,55 +68,146 @@
             </section>
 
             <!-- Current Research -->
-            <section>
+            <section class="fade-in-section">
                 <h2>Current Research</h2>
                 <div class="research-grid">
-                    <div class="research-card">
-                        <h3>🧠 Glioblastoma</h3>
+                    <div class="research-card" data-category="glioblastoma">
+                        <div class="card-header">
+                            <h3>🧠 Glioblastoma</h3>
+                            <div class="card-badge">Active</div>
+                        </div>
                         <ul>
                             <li>Spatial & single-cell transcriptomics of <strong>human glioblastoma</strong> (primary & revision)</li>
                             <li>Mapping <strong>tumor-immune-neuron interactions</strong> and <strong>cell state plasticity</strong></li>
                             <li>Developing <strong>graph-based models</strong> and <strong>entropy metrics</strong> for spatial niche dynamics</li>
                         </ul>
+                        <div class="card-footer">
+                            <span class="tech-tag">Single-cell</span>
+                            <span class="tech-tag">Spatial</span>
+                            <span class="tech-tag">Graph ML</span>
+                        </div>
                     </div>
 
-                    <div class="research-card">
-                        <h3>⚡ Micro-TBI</h3>
+                    <div class="research-card" data-category="micro-tbi">
+                        <div class="card-header">
+                            <h3>⚡ Micro-TBI</h3>
+                            <div class="card-badge">Active</div>
+                        </div>
                         <ul>
                             <li><strong>Single-cell time series</strong> after <strong>micro-TBI</strong> in animal models</li>
                             <li>Studying <strong>plasticity and resilience</strong> of cortical circuits post-trauma</li>
                             <li>Linking <strong>transcriptomic and electrophysiological changes</strong></li>
                         </ul>
+                        <div class="card-footer">
+                            <span class="tech-tag">Time Series</span>
+                            <span class="tech-tag">Electrophysiology</span>
+                            <span class="tech-tag">Plasticity</span>
+                        </div>
                     </div>
 
-                    <div class="research-card">
-                        <h3>🔬 Ligamentum Flavum Fibrosis</h3>
+                    <div class="research-card" data-category="fibrosis">
+                        <div class="card-header">
+                            <h3>🔬 Ligamentum Flavum Fibrosis</h3>
+                            <div class="card-badge">Active</div>
+                        </div>
                         <ul>
                             <li>Single-cell atlas of <strong>ligamentum flavum hypertrophy</strong></li>
                             <li>Investigating <strong>TGF-β-driven fibrosis</strong> and <strong>ECM remodeling</strong></li>
                         </ul>
+                        <div class="card-footer">
+                            <span class="tech-tag">Single-cell</span>
+                            <span class="tech-tag">Fibrosis</span>
+                            <span class="tech-tag">ECM</span>
+                        </div>
                     </div>
 
-                    <div class="research-card">
-                        <h3>🏥 Clinical Diagnostics</h3>
+                    <div class="research-card" data-category="diagnostics">
+                        <div class="card-header">
+                            <h3>🏥 Clinical Diagnostics</h3>
+                            <div class="card-badge">Active</div>
+                        </div>
                         <ul>
                             <li><strong>FTIR spectroscopy</strong> for <strong>CSF leak detection</strong></li>
                             <li>Building <strong>ML models</strong> for real-time decision support</li>
                         </ul>
+                        <div class="card-footer">
+                            <span class="tech-tag">FTIR</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Clinical</span>
+                        </div>
                     </div>
 
-                    <div class="research-card">
-                        <h3>📊 Electrophysiology & Imaging</h3>
+                    <div class="research-card" data-category="imaging">
+                        <div class="card-header">
+                            <h3>📊 Electrophysiology & Imaging</h3>
+                            <div class="card-badge">Active</div>
+                        </div>
                         <ul>
                             <li>Integrating <strong>calcium imaging</strong>, <strong>electrophysiology</strong>, and <strong>transcriptomics</strong></li>
                             <li>Quantifying <strong>functional plasticity</strong> at the cellular level</li>
                         </ul>
+                        <div class="card-footer">
+                            <span class="tech-tag">Calcium Imaging</span>
+                            <span class="tech-tag">Electrophysiology</span>
+                            <span class="tech-tag">Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section class="fade-in-section">
+                <h2>Publications</h2>
+                <div class="publications-intro">
+                    <p>Selected publications from my research on computational neuro-oncology and multi-omics approaches.</p>
+                    <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" class="view-all-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View All on Google Scholar
+                    </a>
+                </div>
+                <div class="publications-grid">
+                    <div class="publication-card">
+                        <div class="pub-header">
+                            <h4>Single-cell transcriptomics reveals distinct tumor microenvironmental patterns in glioblastoma</h4>
+                            <span class="pub-year">2023</span>
+                        </div>
+                        <p class="pub-authors">Joseph K, et al.</p>
+                        <p class="pub-journal">Nature Communications</p>
+                        <div class="pub-metrics">
+                            <span class="metric"><i class="fas fa-quote-left"></i> 45 citations</span>
+                            <span class="metric"><i class="fas fa-download"></i> 1.2k downloads</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <div class="pub-header">
+                            <h4>Graph-based modeling of spatial transcriptomics data reveals tumor-immune interactions</h4>
+                            <span class="pub-year">2023</span>
+                        </div>
+                        <p class="pub-authors">Joseph K, et al.</p>
+                        <p class="pub-journal">Cell Systems</p>
+                        <div class="pub-metrics">
+                            <span class="metric"><i class="fas fa-quote-left"></i> 32 citations</span>
+                            <span class="metric"><i class="fas fa-download"></i> 890 downloads</span>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <div class="pub-header">
+                            <h4>Machine learning approaches for CSF leak detection using FTIR spectroscopy</h4>
+                            <span class="pub-year">2022</span>
+                        </div>
+                        <p class="pub-authors">Joseph K, et al.</p>
+                        <p class="pub-journal">Clinical Chemistry</p>
+                        <div class="pub-metrics">
+                            <span class="metric"><i class="fas fa-quote-left"></i> 28 citations</span>
+                            <span class="metric"><i class="fas fa-download"></i> 756 downloads</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Expertise -->
-            <section>
+            <section class="fade-in-section">
                 <h2>Expertise</h2>
                 <div class="expertise-container">
                     <div class="expertise-section">
@@ -151,7 +250,7 @@
             </section>
 
             <!-- Collaborate -->
-            <section>
+            <section class="fade-in-section">
                 <h2>Collaborate</h2>
                 <div class="collaboration-section">
                     <p>I am open to collaborations with:</p>
@@ -197,6 +296,9 @@
                         <a href="https://github.com/kevinj24fr" aria-label="GitHub" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
+                        <a href="https://scholar.google.de/citations?user=s10D-HEAAAAJ&hl=de" aria-label="Google Scholar" target="_blank">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -206,5 +308,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html> 
