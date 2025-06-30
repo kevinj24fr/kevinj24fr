@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initPageTransitions();
     initMouseFollowEffect();
     initResearchSearchAndFilter();
-    initProgressBarAnimation();
     initPageViewCounter();
 });
 
@@ -326,28 +325,6 @@ function initResearchSearchAndFilter() {
     }
     if (searchInput) searchInput.addEventListener('input', filterCards);
     if (filterSelect) filterSelect.addEventListener('change', filterCards);
-}
-
-// Animate progress bars on scroll
-function initProgressBarAnimation() {
-    const bars = document.querySelectorAll('.progress-bar .progress');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.transition = 'width 1.2s cubic-bezier(.4,0,.2,1)';
-                entry.target.style.width = entry.target.getAttribute('style').match(/width: ([0-9]+%)/)[1];
-            }
-        });
-    }, { threshold: 0.3 });
-    bars.forEach(bar => {
-        // Set width to 0 initially for animation
-        const match = bar.getAttribute('style').match(/width: ([0-9]+%)/);
-        if (match) {
-            bar.setAttribute('data-final-width', match[1]);
-            bar.style.width = '0%';
-        }
-        observer.observe(bar);
-    });
 }
 
 // Initialize page view counter
