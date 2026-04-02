@@ -26,12 +26,25 @@ I lead an interdisciplinary research program where **single-cell & spatial trans
 
 Fast, single-binary CLI tools for common bioinformatics tasks. No Python startup time, no dependency hell.
 
+**File inspection — instant summaries without loading data:**
+
 | Tool | What it does | Highlight |
 |------|-------------|-----------|
-| [**h5peek**](https://github.com/kevinj24fr/h5peek) | Inspect h5ad (AnnData) files without loading data | 530x faster than scanpy |
-| [**geneid**](https://github.com/kevinj24fr/geneid) | Convert between ENSEMBL, symbol, and Entrez IDs | 44,981 genes embedded in a 2.4MB binary |
-| [**derank**](https://github.com/kevinj24fr/derank) | Filter and rank DE results from any tool | Auto-detects DESeq2, edgeR, limma, Seurat |
-| [**mtxpeek**](https://github.com/kevinj24fr/mtxpeek) | Inspect 10x CellRanger output directories | Reads gzipped MTX in milliseconds |
+| [**h5peek**](https://github.com/kevinj24fr/h5peek) | Inspect h5ad (AnnData) files | 530x faster than scanpy |
+| [**mtxpeek**](https://github.com/kevinj24fr/mtxpeek) | Inspect 10x CellRanger MTX output | Reads gzipped MTX in milliseconds |
+| [**fqpeek**](https://github.com/kevinj24fr/fqpeek) | FASTQ stats: reads, quality, GC content | Single-pass streaming, handles .gz |
+| [**csvpeek**](https://github.com/kevinj24fr/csvpeek) | CSV/TSV summary: shape, column types, nulls | Type inference, auto-detect delimiter |
+| [**jsonpeek**](https://github.com/kevinj24fr/jsonpeek) | JSON/JSONL schema detection and summary | Key frequencies, nested structure |
+| [**countpeek**](https://github.com/kevinj24fr/countpeek) | Count matrix summary: sparsity, top genes | Streaming O(1) memory |
+
+**Misc tools:**
+
+| Tool | What it does | Highlight |
+|------|-------------|-----------|
+| [**geneid**](https://github.com/kevinj24fr/geneid) | ENSEMBL / symbol / Entrez ID conversion | 44,981 genes embedded in a 2.4MB binary |
+| [**genesets**](https://github.com/kevinj24fr/genesets) | Query MSigDB gene sets, run enrichment | 8,316 sets (Hallmark + KEGG + GO BP), Fisher's exact test + FDR |
+| [**overlap**](https://github.com/kevinj24fr/overlap) | Compare gene lists: intersection, Jaccard | Case-insensitive, 2 or 3 list comparison |
+| [**gtfq**](https://github.com/kevinj24fr/gtfq) | Query GTF/GFF gene annotations | Binary index for instant lookups after first run |
 
 ---
 
