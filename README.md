@@ -13,7 +13,7 @@ I lead an interdisciplinary research program where **single-cell & spatial trans
 ---
 ## Computational Expertise
 
-- **Rust**: Production systems for autonomous scientific data processing, CLI tooling, pipeline orchestration
+- **Rust**: Production systems for scientific data processing, CLI tooling, pipeline orchestration
 - **R**: Seurat, SpatialExperiment, fgsea, WGCNA, custom entropy pipelines
 - **Python**: PyTorch, scVI, Pyro, Scanpy
 - **Graph modeling**: PyG, NetworkX
