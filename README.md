@@ -1,4 +1,4 @@
-# Kevin Joseph — Computational Neuro-oncology | Multi-Omics | Gliophysiology
+# Kevin Joseph
 
 [![Email](https://img.shields.io/badge/Email-kevin.joseph@uniklinik--freiburg.de-blue?logo=gmail)](mailto:kevin.joseph@uniklinik-freiburg.de)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kevin%20Joseph-blue?logo=linkedin)](https://www.linkedin.com/in/josephkevin)  
@@ -6,43 +6,23 @@
 📍 University Clinic of Freiburg, Germany
 
 ---
-
 ## Mission
 
-I lead an interdisciplinary research program where **single-cell & spatial transcriptomics**, **AI**, and **neurotechnology** converge.  
-We aim to transform **high-dimensional biological data** into **clinical insights** and to advance fundamental understanding of how the brain responds to tumors, trauma, and intervention.
-
-**As a computational biologist**, I build the tools to explore them.  
-**As a neuroscientist**, I collaborate to drive discovery across disciplines.
+I lead an interdisciplinary research program where **single-cell & spatial transcriptomics**, **AI**, and **neurotechnology** converge. We aim to transform **high-dimensional biological data** into **clinical insights** and to advance fundamental understanding of how the brain responds to tumors, trauma, and intervention.
 
 ---
+## Computational Expertise
 
-## Current Research
-
-### Glioblastoma
-- Spatial & single-cell transcriptomics of **human glioblastoma** (primary & revision)
-- Mapping **tumor-immune-neuron interactions** and **cell state plasticity**
-- Developing **graph-based models** and **entropy metrics** for spatial niche dynamics
-
-### Micro-TBI
-- **Single-cell time series** after **micro-TBI** in animal models
-- Studying **plasticity and resilience** of cortical circuits post-trauma
-- Linking **transcriptomic and electrophysiological changes**
-
-### Ligamentum Flavum Fibrosis
-- Single-cell atlas of **ligamentum flavum hypertrophy**
-- Investigating **TGF-β-driven fibrosis** and **ECM remodeling**
-
-### Clinical Diagnostics
-- **FTIR spectroscopy** for **CSF leak detection**
-- Building **ML models** for real-time decision support
-
-### Electrophysiology & Imaging
-- Integrating **calcium imaging**, **electrophysiology**, and **transcriptomics**
-- Quantifying **functional plasticity** at the cellular level
+- **Rust**: Production systems for autonomous scientific data processing, CLI tooling, pipeline orchestration
+- **R**: Seurat, SpatialExperiment, fgsea, WGCNA, custom entropy pipelines
+- **Python**: PyTorch, scVI, Pyro, Scanpy
+- **Graph modeling**: PyG, NetworkX
+- **Machine learning**: VAEs, interpretable ML (SHAP, IG), prototype learning
+- **Spatial analysis**: building alternatives to BayesSpace
+- **Signal processing**: electrophysiology, calcium imaging
+-
 
 ---
-
 ## Rust Tools for Bioinformatics
 
 Fast, single-binary CLI tools for common bioinformatics tasks. No Python startup time, no dependency hell.
@@ -56,37 +36,5 @@ Fast, single-binary CLI tools for common bioinformatics tasks. No Python startup
 
 ---
 
-## Computational Expertise
 
-- **Rust**: Production systems for autonomous scientific data processing, CLI tooling, pipeline orchestration
-- **R**: Seurat, SpatialExperiment, fgsea, WGCNA, custom entropy pipelines
-- **Python**: PyTorch, scVI, Pyro, Scanpy
-- **Graph modeling**: PyG, NetworkX
-- **Machine learning**: VAEs, interpretable ML (SHAP, IG), prototype learning
-- **Spatial analysis**: building alternatives to BayesSpace
-- **Signal processing**: electrophysiology, calcium imaging
 
----
-
-## Biological Expertise
-
-- Group leader in **NeuroEngineering**  
-- Proven expertise in:
-  - **Glioblastoma biology**
-  - **Brain tumor microenvironment**
-  - **Fibrosis & ECM remodeling**
-  - **Trauma-induced CNS responses**
-  - **Neuroimmune interactions**
-  - **Single-cell & spatial transcriptomics**
-
----
-
-## Collaborate
-
-I am open to collaborations with:
-- Advanced postdocs & ML scientists interested in building **new methods**  
-- Biologists eager to drive **computational innovation**  
-- Clinicians exploring **AI-driven translational tools**  
-- Industry partners interested in **neuroscience & digital twins**
-
----
