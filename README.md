@@ -20,7 +20,6 @@ I lead an interdisciplinary research program where **single-cell & spatial trans
 - **Machine learning**: VAEs, interpretable ML (SHAP, IG), prototype learning
 - **Spatial analysis**: building alternatives to BayesSpace
 - **Signal processing**: electrophysiology, calcium imaging
--
 
 ---
 ## Rust Tools for Bioinformatics
