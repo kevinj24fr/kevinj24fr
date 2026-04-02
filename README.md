@@ -14,12 +14,12 @@ I lead an interdisciplinary research program where **single-cell & spatial trans
 ## Computational Expertise
 
 - **Rust**: Production systems for scientific data processing, CLI tooling, pipeline orchestration
-- **R**: Seurat, SpatialExperiment, fgsea, WGCNA, custom entropy pipelines
+- **R**: Transcriptomics, Genomics, Spectroscopy
 - **Python**: PyTorch, scVI, Pyro, Scanpy
 - **Graph modeling**: PyG, NetworkX
 - **Machine learning**: VAEs, interpretable ML (SHAP, IG), prototype learning
-- **Spatial analysis**: building alternatives to BayesSpace
-- **Signal processing**: electrophysiology, calcium imaging
+- **Spatial analysis**: karna
+- **Signal processing**: electrophysiology, calcium imaging, Spectroscopy
 
 ---
 ## Rust Tools for Bioinformatics
